@@ -14,6 +14,7 @@ namespace piedra__papel_o_tijera
             int cont1 = 0, cont2 =0;
             do
             {
+                Console.Clear();
                 int es;
                 Console.WriteLine("\nEscoja");
                 Console.WriteLine("\n1-Piedra");
@@ -28,7 +29,7 @@ namespace piedra__papel_o_tijera
                 else
                 {
                     Random rand = new Random();
-                    int numero = rand.Next(1, 3);
+                    int numero = rand.Next(1, 4);
                     string[] hola = { " ", "Piedra", "Papel", "Tijera" };
                     Console.WriteLine("Usted a lanzado: " + hola[es]);
                     Console.WriteLine("La maquina a lanzado: " + hola[numero]);
